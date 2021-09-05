@@ -1,0 +1,72 @@
+
+<div class="container py-5">
+
+	
+    <!-- For demo purpose -->
+    <header class="text-white text-center">
+	<!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Style.css') }}">    
+
+        <h1 class="display-4">Noise Reduction Tool</h1>
+        <p class="lead mb-0">Upload an image to reduce background noise in image.</p>
+
+    </header>
+
+
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+
+            <!-- Upload image input-->
+	<div class="input-group-append">
+            {% if filename %}
+            <div>
+                <img class = "centre" src="{{ url_for('display_image', filename=filename) }}">
+            </div>
+            {% endif %}
+	</div>
+
+            <form method="post" action="/" enctype="multipart/form-data">
+                <dl>
+                    <p>
+                        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                            
+                            <input type="file" name="file" class="form-control" autocomplete="off" required>
+            
+                        </div>
+                    </p>
+
+                    <p class="lead mb-0">
+                        {% with messages = get_flashed_messages() %}
+                          {% if messages %}
+                            <ul>
+                            {% for message in messages %}
+                              <li>{{ message }}</li>
+                            {% endfor %}
+                            </ul>
+                          {% endif %}
+                        {% endwith %}
+                    </p>
+
+                </dl>
+                <p>
+                    <input type="submit" value="Submit" class="btn btn-info">
+                </p>
+                
+            </form>
+
+
+
+        </div>
+	
+    </div>
+	
+
+
+	
+
+</div>
