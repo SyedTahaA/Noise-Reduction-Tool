@@ -12,11 +12,11 @@ I made this project while learning about neural networks. I used a simple functi
 
 From dataset:
 
-![](images/Example #1.png)
+![](images/Example_1.png)
 
 From google:
 
-![](images/Example #2.png)
+![](images/Example_2.png)
 
 
 Dataset: https://www.kaggle.com/duttadebadri/image-classification
