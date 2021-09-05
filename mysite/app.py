@@ -12,7 +12,6 @@ UPLOAD_FOLDER = 'static/uploads/'
 
 SECRET_KEY = os.urandom(32)
 app.config['SECRET_KEY'] = SECRET_KEY
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
