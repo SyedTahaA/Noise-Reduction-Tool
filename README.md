@@ -24,6 +24,6 @@ Dataset: https://www.kaggle.com/duttadebadri/image-classification
 Images from the travel and adventure folder were only trained and tested on
 
 ### TODOS:
-  - Improve website
+  - Improve website design
   - Improve model
   - Find larger dataset
