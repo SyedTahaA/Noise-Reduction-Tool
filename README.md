@@ -1,6 +1,6 @@
 # Noise-Reduction-Tool
 
-### [Website Link](http://noisy.pythonanywhere.com/)
+### [Test it out!](http://noisy.pythonanywhere.com/)
 
 I made this project while learning about neural networks. I used a functional neural network to try to remove gaussian noise from images.
 
