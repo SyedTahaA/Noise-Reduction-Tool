@@ -25,6 +25,7 @@ Images from the travel and adventure folder were only trained and tested on
 
 ### Conclusion:
 - Convolutional neural networks are not the best for noise removal
+- It appears as if a blurr is just being applied to the inputted image
 
 ### TODOS:
   - Improve website design
